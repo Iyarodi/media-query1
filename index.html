@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>media query task</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="mid-text">
+        <h1>Learn to code by watching others</h1>
+        <p class="firstp">
+          See how experienced developers solve problems in real-time.
+        </p>
+        <p>
+          watching scripted tutorials is great,but understanding how developers
+          think is invaluable.
+        </p>
+      </div>
+      <div class="cont">
+        <div class="ontop">
+            <p><strong>Try it free 7 days</strong> then $20/mo. thereafter</p>
+        </div>
+    
+        <div class="container">
+          <form
+            class="login_form"
+            action="home.html"
+            method="post"
+            name="form"
+            onsubmit="return validated()"
+          >
+            <div class="font">First Name</div>
+            <input autocomplete="off" type="text" name="Name" />
+
+            <div class="font">Last Name</div>
+            <input autocomplete="off" type="text" name="Last Name" />
+            <div class="font">Email</div>
+            <input autocomplete="off" type="text" name="email" />
+            <div id="email_error">Please fill up your Email or Phone</div>
+
+            <div class="font font2">Password</div>
+            <input type="password" name="password" />
+            <div id="pass_error">Please fill up your Password</div>
+
+            <button type="submit">Claim your free trial</button>
+            <p class="conditions">
+              By clicking the button you are agreeing to our
+              <span class="terms">Terms and services</span>
+            </p>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

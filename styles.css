@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-image: url("bg-intro-desktop.png");
+  background-color: rgb(202, 70, 92);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 100vh;
+}
+main {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-flow: row;
+  justify-content: space-between;
+
+
+}
+.mid-text {
+  color: white;  
+  margin-left: 20vh;
+  width: 90vh;
+  
+}
+.mid-text h1{
+    font-size: 50px;
+}
+.mid-text p{
+    font-size: 20px;
+    line-height:5vh;
+}
+.firstp{
+    font-size: 20px;
+    padding-top: 5vh;
+}
+.ontop{
+	color: white;
+	background-color: rgb(114, 12, 114);
+	height: 8vh;
+	width: 60vh;
+	justify-content: center;
+	align-items: center;
+	border-radius: 6px;
+	margin-top: 15vh;
+	margin-bottom: 3vh;
+}
+.ontop p{
+	padding-top: 18px;
+	padding-left: 10vh;
+	font-size: medium;
+}
+.cont{
+	display: flex;
+	flex-direction: column;
+	}
+.container{
+	position: relative;	
+	width: 60vh;
+	height: 70vh;
+	background: #dedede;
+	border-radius: 5px;
+    margin-right: 10vh;
+    
+}  
+.login_form{
+	padding: 50px 60px;
+}
+
+.login_form .font{
+	font-size: 18px;
+	color: #130f40;
+	margin: 5px 0;
+}
+.login_form input{
+	height: 25px;
+	width: auto;
+	border-bottom: 5vh;
+	font-size: 18px;
+	outline: none;
+	border: 1px solid silver;
+}
+.login_form .font2{
+	margin-top: 30px;
+}
+.login_form button{
+	margin: 45px 0 5px 0;
+	height: 45px;
+	width: auto;
+	font-size: 20px;
+	color: white;
+	outline: none;
+	cursor: pointer;
+	font-weight: bold;
+	background: #11831e;
+	border-radius: 3px;
+	border: 1px solid #3949AB;
+	transition: .5s;
+}
+.login_form button:hover{
+	background: #09090c;
+}
+.login_form #email_error,
+.login_form #pass_error{
+	margin-top: 5px;
+	width: 345px;
+	font-size: 18px;
+	color: #C62828;
+	background: rgba(255,0,0,0.1);
+	text-align: center;
+	padding: 5px 8px;
+	border-radius: 3px;
+	border: 1px solid #EF9A9A;
+	display: none;
+}
+.terms{
+	color: red;
+}
+.conditions{
+	margin-bottom: 20vh;
+}
+
+@media screen and (max-width:640px) {
+    main{
+        display: flex;
+		flex-direction: column;
+    }
+	body{
+		background-image: url('bg-intro-mobile.png');
+	}
+	.container{
+		margin-right: 15vh;
+	}
+	.ontop{
+		height: 17vh;
+		margin-left: auto;
+		margin-right: 20vh;
+	}
+	.ontop p{
+		padding-top: 43px;
+	}
+    .mid-text{
+		width: 70vh;
+		padding-right: 20vh;
+	}
+	.mid-text h1{
+		font-size: 50px;
+	} 
+}
+
